@@ -28,6 +28,10 @@ a {
 /* Header*/
 
 .header {
+    border-bottom: 1px solid #DEDEDE;
+}
+
+.header-wrapper {
     display: flex;
     align-items: center;
     gap: 196px;
@@ -47,7 +51,7 @@ a {
 .nav {
     flex-grow: 1;
     display: flex;
-    gap: 46px;
+    gap: 47px;
 }
 
 .nav-link {
@@ -157,6 +161,8 @@ a {
     font-size: 79px;
     font-weight: 700;
     text-transform: capitalize;
+    margin-top: 20px;
+    margin-bottom: 18px;
 }
 
 .hero-description {
@@ -165,4 +171,62 @@ a {
     color: rgba(var(--light-rgb), .8);
     font-size: 15px;
     line-height: 160%;
+}
+
+/* Banner*/
+
+.banner {
+    margin-top: 140px;
+}
+
+.banner .container {
+    max-width: 1182px;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.banner-wrapper {
+    padding: 100px;
+}
+
+.banner-title {
+    color: #FFF;
+    font-size: 60px;
+    font-family: var(--nunito-sans);
+    font-weight: 900;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.banner-title span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 95px;
+    height: 28px;
+    background-color: #F37335;
+    color: #FFF;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-description {
+    color: #FFF;
+    font-size: 15px;
+    line-height: 160%;
+}
+
+.banner-btn {
+    background-color: var(--accent-light);
+    width: 170px;
+    height: 58px;
+    border: 0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
 }
