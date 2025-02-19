@@ -46,6 +46,16 @@ button {
     padding-top: 26px;
     padding-bottom: 26px;
 }
+.burger-menu {
+    display: none;
+    width: 34px;
+    height: 22px;
+    background-image: url(../images/burger-menu.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    border: none;
+}
 
 .logo {
     display: block;
@@ -261,7 +271,7 @@ button {
     color:  var(--light);
     font-size: 15px;
     line-height: 160%;
-    font-weight: 400px;
+    font-weight: 400;
     color: rgba(var(--light-rgb), .8);
 }
 
@@ -628,6 +638,7 @@ button {
     .logo {
         width: 150px;
         height: 47.81px;
+        flex-grow: 1;
     }
 
     .header-wrapper {
@@ -697,4 +708,93 @@ button {
         margin-bottom: 20px;
     }
     
+}
+
+@media (max-width: 730px) {
+    .header-wrapper {
+        gap: 21px;
+        padding-top: 19px;
+        padding-bottom: 19;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .nav._modal {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .burger-menu {
+        display: block;
+    }
+
+    .logo {
+        width: 116px;
+        height: 37px;
+        flex-grow: 1;
+    }
+
+    .modal {
+        width: 100%;
+        max-width: 500px;
+        background-color: #fff8DC;
+        padding: 40px 15px;
+        position: absolute;
+        top: -400px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        box-sizing: border-box;
+        text-align: center;
+        transition: var(--tr);
+    }
+
+    .modal-close {
+        display: block;
+        width: 22px;
+        height: 22px;
+        background-image: url(../images/close-burger-menu.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: transparent;
+        border: 0;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    .hero {
+        padding-top: 55px;
+        padding-bottom: 55px;
+    }
+
+    .breadcrumbs {
+        font-size: 14px;
+    }
+
+    .hero-title {
+        font-size: 38px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+    }
+
+    .banner {
+        margin-top: 33px;
+    }
+
+    .banner-wrapper {
+        padding: 35px 15px;
+    }
+
+    .banner-description {
+        font-size: 14px;
+    }
 }
