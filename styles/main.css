@@ -317,12 +317,17 @@ button {
     text-transform: uppercase;
 }
 
-.menu-header select {
+.menu-select {
     color: var(--dark);
+    appearance: none;
     border-radius: 22px;
     border: 1px solid #DEDEDE;
     background: var(--light);
-    padding: 10px 30px;
+    padding: 13px 30px;
+    background-image: url(../images/chevron-down.svg);
+    background-size: 14px 10px;
+    background-repeat: no-repeat;
+    background-position: 89% center;
 }
 
 .menu-box {
@@ -383,8 +388,7 @@ button {
 
 .menu-btn {
     background-color: var(--accent-light);
-    width: 152px;
-    height: 38px;
+    padding: 11px 24px;
     border: 0;
     border-radius: 5px;
     display: flex;
@@ -417,7 +421,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 111px 0;
+    padding: 111px 15px;
     gap: 15px;
 }
 
@@ -770,7 +774,7 @@ button {
     }
 
     .hero {
-        padding-top: 55px;
+        padding-top: 57px;
         padding-bottom: 55px;
     }
 
@@ -796,5 +800,95 @@ button {
 
     .banner-description {
         font-size: 14px;
+        margin-bottom: 20px;
+        max-width: 220px;
+    }
+
+    .menu-header {
+        margin-top: 58px;
+        margin-bottom: 30px;
+    }
+
+    .menu-title {
+        font-size: 27px;
+    }
+
+    .menu-select {
+        font-size: 12px;
+        flex-basis: 136px;
+        width: 136px;
+        background-position: 93% center;
+        padding: 13px 15px;
+    }
+
+    .menu-box {
+        gap: 24px 20px;
+    }
+
+    .menu-thumb {
+        height: 50vw;
+        margin-bottom: 10px;
+    }
+
+    .menu-name {
+        font-size: 13px;
+        margin-bottom: 8px;
+        padding-top: 0;
+    }
+
+    .menu-price {
+        font-size: 12px;
+        margin-bottom: 14px;
+    }
+
+    .menu-btn {
+        padding: 11px 22px;
+    }
+
+    .menu-item._additionally .menu-thumb {
+        height: 30vw;
+    }
+
+    .footer {
+        margin-top: 80px;
+    }
+
+    .footer > .container {
+        flex-direction: column;
+        gap: 35px;
+        position: relative;
+    }
+
+    .footer-logo {
+        margin-bottom: 9px;
+    }
+
+    .footer-tel._mobile {
+        position: absolute;
+        top: 50px;
+        right: 15px;
+    }
+
+    .footer-tel._mobile + .footer-tel._mobile {
+        top: 95px;
+    }
+
+    .footer-title {
+        font-size: 18px;
+    }
+
+    .footer-nav {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .menu-item._additionally .menu-thumb {
+        flex-basis: calc(100% - 130px - 20px);
+        height: 38vw;
+    }
+
+    .menu-item._additionally .menu-info {
+        flex-basis: 130px;
     }
 }
