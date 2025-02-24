@@ -165,7 +165,7 @@ button {
 /* Hero*/
 
 .hero {
-    background-image: url(../images/hero.jpg);
+    background-image: url(../images/hero.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -231,7 +231,7 @@ button {
 
 .banner .container {
     max-width: 1182px;
-    background-image: url(../images/banner.jpg);
+    background-image: url(../images/banner.webp);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
@@ -523,7 +523,7 @@ button {
 /* Contact */
 
 .hero-contact {
-    background-image: url(../images/hero-contact.jpg);
+    background-image: url(../images/hero-contact.webp);
 }
 
 .contact-main {
